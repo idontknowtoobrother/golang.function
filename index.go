@@ -18,6 +18,9 @@ func main() {
 
 	c, d = swapWithVariablesExplaination(c, d)
 	fmt.Printf("\nafter swap with variables explaination\nc = %d, d = %d\n", c, d)
+
+	formatStr := getFormatSwapString(c, d)
+	fmt.Printf(formatStr)
 }
 
 func displayPlayerData(playerName string, playerMoney int) {
@@ -36,4 +39,9 @@ func swapWithVariablesExplaination(n1, n2 int) (swapToN2, swapToN1 int) {
 	swapToN2 = n2
 	swapToN1 = n1
 	return swapToN2, swapToN1
+}
+
+func getFormatSwapString(n1, n2 int) (result string) {
+	result = "n1 = %d, n2 = %d"
+	return fmt.Sprintf(result, n1, n2)
 }
