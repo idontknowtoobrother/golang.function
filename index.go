@@ -7,6 +7,8 @@ func main() {
 
 	const a, b = 5, 10
 	fmt.Println("a + b = ", plus(a, b))
+
+	fmt.Printf("%d + %d = %d", a, b, plus(a, b))
 }
 
 func displayPlayerData(playerName string, playerMoney int) {
